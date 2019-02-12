@@ -1,0 +1,36 @@
+body {
+  background-color: green;	/* ⑦ */
+  color: white;
+}
+.card{
+  border-width: 2px;		/* ④ */
+  border-style: solid;		/* ④ */
+  border-color: darkgreen;	/* ④ */
+  display: inline-block;	/* ⑤ */
+  height: 100px;		/* ⑤ */
+  width: 80px;			/* ⑤ */
+  border-radius: 10px;		/* ⑤ */
+  margin: 10px;			/* ⑤ */
+  font-size: 24pt;		/* ⑥ */
+  text-align: center;		/* ⑥ */
+  line-height: 50px;		/* ⑥ */
+  background-color: white;	/* ⑦ */
+  vertical-align: middle;
+}
+.spades{
+  color: black;			/* ③ */
+}
+.hearts{
+  color: red;			/* ③ */
+}
+.diams{
+  color: red;			/* ③ */
+}
+.clubs{
+  color: black;			/* ③ */
+}
+.sect{
+  color: blue;			/* ⑧ */
+  background-color: skyblue;	/* ⑧ */
+  font-size: 36pt;
+}
