@@ -5,7 +5,7 @@ include_once("bj_functions.php");
 $money = $_SESSION["money"];
 $bet = $_GET["bet"];
 if($bet<=0 || $bet>$money) {
-  $_SESSION["init_message"] = "賭けた金額が不適切です。所持金の範囲内で賭けてください";
+  $_SESSION["init_message"] = "所持金の範囲内で賭けてください";
   header("Location: bj_init.php");
 } else {
   $_SESSION["bet"] = $bet;
@@ -22,12 +22,12 @@ foreach($suits as $suit) {		// カードの生成
     $cards[] = array("suit" => $suit, "num" => $i);
   }
 }
-shuffle($cards);			// カードを切る
+shuffle($cards);
 
-$d_hands[] = array_shift($cards);			// ディーラ1枚目
-$d_hands[] = array_shift($cards);			// ディーラ2枚目
-$p_hands[] = array_shift($cards);			// プレイヤ1枚目
-$p_hands[] = array_shift($cards);			// プレイヤ2枚目
+$d_hands[] = array_shift($cards);
+$d_hands[] = array_shift($cards);
+$p_hands[] = array_shift($cards);
+$p_hands[] = array_shift($cards);
 $_SESSION["cards"] = $cards;
 $_SESSION["d_hands"] = $d_hands;
 $_SESSION["p_hands"] = $p_hands;

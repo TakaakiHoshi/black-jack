@@ -10,7 +10,7 @@ $d_point = total($d_hands);
 $p_point = total($p_hands);
 
 while($d_point<17) {
-  $d_hands[] = array_shift($cards);			// ディーラ1枚追加
+  $d_hands[] = array_shift($cards);
   $d_point = total($d_hands);
 }
 

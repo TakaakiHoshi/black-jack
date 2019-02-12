@@ -6,11 +6,11 @@ function total($hands) {
   foreach($hands as $hand) {
     $num = $hand["num"];
 
-    if($num >10) {				// J、Q、Kは10点
+    if($num >10) {
       $num = 10;
-    } elseif ($num == 1) {			// Aceは11点
+    } elseif ($num == 1) {
       $num = 11;
-      $ace = $ace + 1;				// 11点扱いのAceの枚数
+      $ace = $ace + 1;
     }
     $ttl = $ttl + $num;
     if($ace > 0 && $ttl>21) {
